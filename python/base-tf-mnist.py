@@ -7,17 +7,19 @@ mnist = input_data.read_data_sets(os.path.expanduser("~/data/MNIST_data/"), one_
 batch_size = 100 # TODO
 steps = 1000 # TODO
 
+# write your model
+def inference():
+	pass
+
+def loss():
+	pass
+
+def training():
+	pass
+
+
 x = tf.placeholder(tf.float32, [None, 784])
 y = tf.placeholder(tf.float32, [None, 10])
-
-# write your model
-
-
-
-
-
-
-
 
 # TODO y_ = ...
 
