@@ -38,9 +38,9 @@ with tf.Session() as sess:
 
 		if (i+1) % 100 == 0:
 			train_acc = sess.run(accuracy, {x: batch_xs, y: batch_ys})
-			print("step %d, train accuracy %g" % (100, train_acc))
+			print("step %d, train accuracy %g" % (i+1, train_acc))
 		sess.run(train, {x: batch_xs, y: batch_ys})
 
-	acc = sess.run(accuracy, {x: mnist.test.images, y_: mnist.test.labels})
+	acc = sess.run(accuracy, {x: mnist.test.images, y: mnist.test.labels})
 	print("test accuracy %g" % acc)
 
